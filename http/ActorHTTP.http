@@ -1,0 +1,37 @@
+@base_url = http://localhost:3000/actor
+
+### GET ALL DE Actor
+GET {{base_url}}/
+Accept: application/json
+
+### GET BY ID DE Actor
+GET {{base_url}}/1
+Accept: application/json
+
+### POST DE Actor
+POST {{base_url}}/
+Content-Type: application/json
+Accept: application/json
+
+{
+  "nombre": "John",
+  "apellido": "Doe",
+  "telefono": "123-456-7890",
+  "nacionalidad": "Estadounidense"
+}
+
+### PUT DE Actor
+PUT {{base_url}}/2
+Content-Type: application/json
+Accept: application/json
+
+{
+  "nombre": "Jane",
+  "apellido": "Smith",
+  "telefono": "987-654-3210",
+  "nacionalidad": "Canadiense"
+}
+
+### DELETE DE Actor
+DELETE {{base_url}}/4
+Accept: application/json
